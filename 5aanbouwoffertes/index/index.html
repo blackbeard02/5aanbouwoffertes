@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>5aanbouwoffertes</title>
+</head>
+<body>
+<div class="navbar navbar-expand navbar-dark text-white nav">
+    <div class="container">
+        <a href="#" class="navbar-brand"><img class="logo" src="
+                    " alt="" srcset="../img/MicrosoftTeams-image(1).png "></a>
+    </div>
+</div>
+<section class="text-dark text-center py-5" id="Header">
+    <div class="container">
+        <div class="d-md-flex align-items-center justify-content-center row">
+            <div class="py-3 col ">
+                <h1>5aanbouwoffertes</h1>
+                <p class="mx-3">Ben je het beu waar je woont, maar nog niet helemaal klaar om te vertrekken? Wil je een
+                    ruimte creëren die uniek en opwindend is en pronkt met je persoonlijkheid en manier van leven? Met
+                    onze Creatief aanbouw ontwerp Nederland kan 5 Aanbouw Offertes je daarbij helpen. Ons team van
+                    bekwame architecten en bouwers werkt hard om unieke woonruimtes te creëren die aan uw behoeften
+                    voldoen en verder gaan dan u verwacht.</p>
+            </div>
+            <div class="container col">
+                    <form id="signUpForm" action="javascript:sendEmail();" method="post" name="Form">
+                        <p class="text-center mb-4"><b>Neem Contact Op</b></p>
+                        <!-- start step indicators -->
+                        <div class="form-header d-flex mb-2">
+                            <span class="stepIndicator"></span>
+                            <span class="stepIndicator"></span>
+                            <span class="stepIndicator"></span>
+                            <span class="stepIndicator"></span>
+                        </div>
+                        <!-- end step indicators -->
+                        <span id="erorrmsg"></span>
+                        <!-- step one -->
+                        <div class="step">
+            
+                            <div class="d-sm-flex justify-content-center">
+                                <div class=" col-sm-3 mx-1 py-2">
+                                    <input type="test" placeholder="Adres" oninput="this.className = ''" name="Adres">
+                                </div>
+                                <div class="col-sm-3 mx-1 py-2">
+                                    <input type="test" placeholder="Huis nr" oninput="this.className = ''" name="Huisnr">
+                                </div>
+                                <div class=" col-sm-3 mx-1 py-2">
+                                    <input type="test" placeholder="Postcode" oninput="this.className = ''" name="Postcode">
+                                </div>
+                                <div class="col-sm-3 mx-1 py-2">
+                                    <input type="test" placeholder="Stad" oninput="this.className = ''" name="Stad">
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- step two -->
+                        <div class="step">
+                            <div class="d-sm-flex justify-content-center">
+                                <div class="col-sm-5 mx-1 py-2">
+                                    <input type="text" placeholder="Voornaam" oninput="this.className = ''" name="VoorNaam">
+                                </div>
+                                <div class="col-sm-5 mx-1 py-2">
+                                    <input type="text" placeholder="Achternaam" oninput="this.className = ''" name="AchterNaam">
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- step three -->
+                        <div class="step">
+                            <div class="justify-content-center">
+                                <div class="col-sm-5 mx-1 py-2">
+                                    <input type="text" placeholder="hoeveel meter breed" oninput="this.className = ''" name="hoeveel-meter-breed">
+                                </div>
+                                <div class="col-sm-5 mx-1 py-2">
+                                    <input type="text" placeholder="hoeveel meter diep" oninput="this.className = ''" name="hoeveel-meter-diep">
+                                </div>
+                                <div class="col-sm-2 mx-1 py-2">
+                                    <select name="Oplevering" id="" onselect="this.className = ''">
+                                        <option value="">Oplevering</option>
+                                        <option value="Casco">Casco</option>
+                                        <option value="Afgewerkt">Afgewerkt</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-2 mx-1 py-2">
+                                    <select name="Bouwtekening aanwezig" id="" onselect="this.className = ''">
+                                        <option value="">Bouwtekening aanwezig</option>
+                                        <option value="Ja">Ja</option>
+                                        <option value="Nee">Nee</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-2 mx-1 py-2">
+                                    <select name="Vergunning nodig" id="" onselect="this.className = ''">
+                                        <option value="">Vergunning nodig</option>
+                                        <option value="Ja">Ja</option>
+                                        <option value="Nee">Nee</option>
+                                        <option value="Weet ik niet">Weet ik niet</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- step foor -->
+                        <div class="step">
+                            <div class="input-group justify-content-center">
+                                <div class="col-sm-6 mx-1 py-2">
+                                    <input type="text" placeholder="Telefoon nummer" oninput="this.className = ''"
+                                           name="Telefoon Nummer">
+                                </div>
+                                <div class="col-sm-4 mx-1 py-2">
+                                    <input type="text" id="email" placeholder="E-mail" oninput="this.className = ''" name="E-mail">
+            
+                                </div>
+                                <div class="my-1 textareaDiv">
+                                    <input type="textarea" class="text" placeholder="Bericht" oninput="this.className = ''"
+                                           name="Bericht">
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- start previous / next buttons -->
+                        <div class="form-footer d-flex">
+                            <button type="button" id="prevBtn" onclick="nextPrev(-1)">Vorig</button>
+                            <button type="button" id="nextBtn" onclick="nextPrev(1)">Volgende</button>
+                        </div>
+                        <!-- end previous / next buttons -->
+                    </form>
+            </div>    
+        </div>
+    </div>
+</section>
+
+<!-- --------------------- form section-------------------------------------- -->
+<!---------------------------content--------------------->
+<section class="text-dark text-center py-md-3">
+    <div class="container">
+        <div class="d-md-flex align-items-center justify-content-center">
+            <img src="../img/Serre-zijaansluiting.jpeg" class=" w-50 img-fluid rounded-4" alt="Photo">
+            <div class="py-3 mx-4">
+                <h1>Creatief Aanbouw Ontwerp Speciaal voor jou gemaakt</h1>
+                <p>Bij de realisatie van uw uitbreiding houden we rekening met zowel functionele aspecten als esthetiek.
+                    We zorgen ervoor dat de nieuwe ruimte naadloos aansluit op uw bestaande woning, zowel qua
+                    architectuur als materiaalgebruik. Ons ervaren team van vakmensen zorgt voor een vakkundige
+                    uitvoering en een hoogwaardige afwerking, zodat uw nieuwe woonruimte perfect geïntegreerd is in uw
+                    woning.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="text-dark text-center py-md-3">
+    <div class="container">
+        <div class="d-md-flex align-items-center justify-content-center">
+            <div class="py-3 mx-4">
+                <p>Of het nu gaat om een extra slaapkamer, een uitbreiding van de woonkamer of het creëren van een
+                    rustige werkplek, wij nemen de tijd om uw wensen en eisen te begrijpen en bieden op maat gemaakte
+                    oplossingen die aan uw verwachtingen voldoen. Wij geloven dat uw huis een weerspiegeling moet zijn
+                    van wie u bent, en daarom streven we ernaar om een uitbreiding te ontwerpen die niet alleen
+                    functioneel is, maar ook een weerspiegeling is van uw persoonlijke stijl en smaak.</p>
+            </div>
+            <img src="../img/Aanbouw_Voorschoten_1.jpg" class=" w-50 img-fluid rounded-4" alt="Photo">
+        </div>
+    </div>
+</section>
+<section class="py-5 mt-2 LowContent">
+    <div class="text-center mx-3 text-white">
+        <p>
+            Een serre wordt ook wel wintertuin genoemd, vooral als deze voor de winteropslag van kuipplanten wordt
+            gebruikt.
+        </p>
+    </div>
+</section>
+<!-------------------colmes------------------------>
+<section class="py-4">
+    <div class="container">
+        <h2 class="text-center pb-4">De Voordelen van Creatief Aanbouw Ontwerp</h2>
+        <div class="row text-center ">
+            <div class="col-lg-4 d-flex align-items-stretch text-white">
+                <div class="card Col1">
+                    <div class="card-body">
+                        <h3 class="card-title">Unieke Woonruimtes op Maat</h3>
+                        <p class="card-text">Bij 5 Aanbouw Offertes geloven we dat elke huiseigenaar een woonruimte
+                            verdient die zijn eigen stijl en persoonlijkheid uitstraalt. Daarom bieden we creatieve
+                            uitbreidingsontwerpen die speciaal voor jou worden gemaakt. Of je nu een extra kamer wilt
+                            toevoegen, je leefruimte wilt vergroten of een thuiskantoor wilt opzetten, wij hebben de
+                            vaardigheden om jouw dromen werkelijkheid te maken.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 d-flex align-items-stretch ">
+                <div class="card  Col2">
+                    <div class="card-body">
+                        <h3 class="card-title">Duurzaamheid en Milieuvriendelijkheid</h3>
+                        <p class="card-text">Bij het ontwerpen van onze creatieve aanbouwontwerpen in Nederland houden
+                            we rekening met functionaliteit en milieuvriendelijkheid. We maken gebruik van de nieuwste
+                            technologieën en methoden om energiezuinige huizen te bouwen die kostenbesparend en goed
+                            voor het milieu zijn. Onze ontwerpen omvatten moderne functies zoals slimme verlichting,
+                            luchtsystemen en isolatiematerialen, die jouw levenskwaliteit verbeteren en je
+                            energierekening verlagen.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 d-flex align-items-stretch">
+                <div class="card col3">
+                    <div class="card-body">
+                        <h3 class="card-title">Hoge Kwaliteit en Eerlijke Prijzen</h3>
+                        <p class="card-text">Bij 5 Aanbouw Offertes hechten we veel waarde aan eerlijkheid en kwaliteit
+                            in alles wat we doen. We bieden transparante prijzen en gedetailleerde offertes, zodat je
+                            precies kunt zien waar je voor betaalt. Ons team van experts streeft ernaar om de hoogste
+                            kwaliteitsnormen te halen of zelfs te overtreffen. Bovendien ondersteunen we ons werk met
+                            een garantie, zodat je met een gerust hart kunt investeren in jouw woning.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-----------------------content---------------------------------->
+<section class="text-white  text-center pt-5 pb-3">
+    <div class="container">
+        <div class="d-md-flex align-items-center justify-content-center LowContent">
+            <img src="../img/504c35072545663d20dcf667ab2aad08.jpg" class=" w-50 img-fluid pt-2 pt-sm-0" alt="#">
+            <div class="py-3 mx-4">
+                <h2>Aanbouw Offertes</h2>
+                <p>Naast het bieden van creatieve aanbouwontwerpen, bieden we ook een breed scala aan
+                    woningrenovatiediensten. Of je nu je keuken en badkamer wilt renoveren, buitenruimtes wilt creëren
+                    of landschapsarchitectuur wilt toevoegen, wij hebben de vaardigheden en expertise om van jouw hele
+                    huis een unieke en inspirerende plek te maken die past bij jouw levensstijl en smaak.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="text-white  text-center py-3">
+    <div class="container">
+        <div class="d-md-flex align-items-center justify-content-center LowContent">
+            <div class="py-3 mx-4">
+                <h2>Contact Opnemen</h2>
+                <p>Ben je klaar om een prachtige en unieke woonruimte te creëren die jouw persoonlijkheid weerspiegelt?
+                    Neem nu direct contact op met 5 Aanbouw Offertes voor een afspraak en een vrijblijvende offerte. Ons
+                    team van experts staat klaar om samen met jou jouw dromen werkelijkheid te maken.</p>
+            </div>
+            <img src="/img/Bouwbedrijf-Reitsma-Hurdegaryp-2-1024x681-1.jpg" class=" w-50 img-fluid pb-2 pb-sm-0"
+                 alt="#">
+        </div>
+    </div>
+</section>
+
+<section class="text-white  text-center py-3">
+    <div class="container">
+        <div class="d-md-flex align-items-center justify-content-center LowContent">
+            <img src="../img/Schuifpui-steellook.jpeg" class=" w-50 img-fluid pt-2 pt-sm-0" alt="#">
+            <div class="py-3 mx-4">
+                <h1>Neem direct contact met ons op</h1>
+                <p>Ben je klaar om een ​​prachtige, unieke woonruimte te maken die laat zien wie je bent en hoe je
+                    leeft? Neem direct contact op met 5 Aanbouw Offertes voor een afspraak en een vrijblijvende offerte.<br><br>Ons
+                    team van experts werkt hard om u gepersonaliseerde en innovatieve woonruimtes te bieden die aan uw
+                    behoeften voldoen en verder gaan dan u verwacht. We moeten samenwerken om uw dromen waar te maken.
+                </p>
+                <button class="btn FormButton btn-lg mt-5" onclick="location.href='#Header'">contact</button>
+            </div>
+        </div>
+    </div>
+</section>
+    
+
+<p class="text-center pt-4 pb-2">Copyright &copy; 2023 5aanbouwoffertes</p>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="../js/bootstrap.bundle.min.js"></script>
+<script src="../js/script.js"></script>
+<script>
+
+    function sendEmail() {
+        Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "username",
+        Password : "password",
+        To : 'Leads@aannemersbedrijfyoursolutions.nl',
+        From : "webmaster@address.com",
+        Subject : "This is the subject",
+        Body : "And this is the body"
+        }).then(
+        message => alert(message));
+    }
+</script>
+</body>
+</html>
